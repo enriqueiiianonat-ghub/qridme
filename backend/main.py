@@ -8,6 +8,9 @@ import requests
 import hashlib
 
 app = FastAPI()
+@app.get("/")
+def root():
+    return {"message": "QRIDME Backend API Running"}
 
 app.add_middleware(
     CORSMiddleware,

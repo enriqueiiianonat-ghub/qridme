@@ -1,0 +1,27 @@
+# Development tool caches
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+
+# Python caches
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Sensitive environment variables (CRITICAL)
+.env
+.env.*
+backend/.env*
+
+# IDEs and system files
+.yaml
+.vscode/
+.idea/
+.DS_Store
+# Block the entire .env folder inside backend
+backend/.env/
+backend/.env/*
+*.json

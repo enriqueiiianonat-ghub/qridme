@@ -1,5 +1,5 @@
 from pydantic import BaseModel
-from typing import Optional
+from typing import Optional, Dict
 
 class IDRecordOut(BaseModel):
     record_id: str
@@ -20,3 +20,4 @@ class IDRecordOut(BaseModel):
     email_address: Optional[str] = None
     qr_image_base64: Optional[str] = None
     qr_level: Optional[str] = "basic"
+    file_urls: Optional[Dict[str, str]] = None

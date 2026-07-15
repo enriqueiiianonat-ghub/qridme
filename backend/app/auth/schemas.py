@@ -13,3 +13,4 @@ class ProfileResponse(BaseModel):
     family_name: str
     email: EmailStr
     created_at: Optional[str] = None
+    email_verified: Optional[bool] = False

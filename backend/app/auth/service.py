@@ -17,6 +17,7 @@ def create_or_update_profile(uid: str, first_name: str, family_name: str, email:
         "family_name": family_name,
         "email": email,
         "created_at": datetime.now(timezone.utc).isoformat(),
+        "email_verified": False,
     }
     doc_ref.set(data, merge=True)
     return {"uid": uid, **data}

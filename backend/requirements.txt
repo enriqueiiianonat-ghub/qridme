@@ -6,3 +6,4 @@ pydantic
 qrcode[pil]
 python-multipart
 email-validator
+resend

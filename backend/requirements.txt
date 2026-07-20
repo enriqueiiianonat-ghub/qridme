@@ -7,3 +7,4 @@ qrcode[pil]
 python-multipart
 email-validator
 resend
+Pillow
